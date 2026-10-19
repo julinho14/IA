@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão IA - Desafio do Conhecimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Tela Inicial -->
+        <section id="tela-inicio" class="tela ativa">
+            <h1>🤖 MISSÃO: INTELIGÊNCIA ARTIFICIAL</h1>
+            <p class="subtitulo">
+                Você foi selecionado para uma missão especial: testar seus conhecimentos 
+                sobre Inteligência Artificial. Responda corretamente e torne-se um 
+                <strong>Agente IA Nível Mestre</strong>!
+            </p>
+            <div class="regras">
+                <h3>📋 Regras da Missão:</h3>
+                <ul>
+                    <li>✅ 5 perguntas sobre Inteligência Artificial</li>
+                    <li>✅ Cada resposta correta vale 20 pontos</li>
+                    <li>✅ Você tem 30 segundos por pergunta</li>
+                    <li>✅ Pontuação máxima: 100 pontos</li>
+                </ul>
+            </div>
+            <button id="btn-iniciar" class="btn-principal">🚀 Iniciar Missão</button>
+        </section>
+
+        <!-- Tela do Quiz -->
+        <section id="tela-quiz" class="tela">
+            <div class="header-quiz">
+                <span id="contador-pergunta">Pergunta 1/5</span>
+                <span id="pontuacao">Pontos: 0</span>
+            </div>
+            <div class="timer-container">
+                <div class="timer-bar" id="timer-bar"></div>
+                <span id="timer-texto">30s</span>
+            </div>
+            <h2 id="pergunta-texto">Carregando pergunta...</h2>
+            <div id="opcoes" class="opcoes"></div>
+            <div id="feedback" class="feedback"></div>
+        </section>
+
+        <!-- Tela Final -->
+        <section id="tela-final" class="tela">
+            <h1>🏁 Missão Concluída!</h1>
+            <div class="resultado">
+                <p>Sua pontuação final:</p>
+                <div id="pontuacao-final" class="pontuacao-final">0</div>
+                <p id="mensagem-final" class="mensagem-final"></p>
+                <div id="medalha" class="medalha"></div>
+            </div>
+            <button id="btn-reiniciar" class="btn-principal">🔄 Jogar Novamente</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
